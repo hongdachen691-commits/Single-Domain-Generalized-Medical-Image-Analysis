@@ -17,6 +17,8 @@ Data augmentation is essential in medical imaging for improving classification a
 This study systematically evaluates three data augmentation methods – Noise injection, SalfMix (saliency based region mixing), and Elastic transformation – on two medical image datasets (brain tumour MRI and ocular disease fundus) using two backbone networks (ResNet 50 and ViT B). All models were trained on a Google Colab T4 GPU (50 epochs for ViT B, 1 epoch for ResNet 50), and performance was measured using accuracy, F1 score, and ROC AUC.
 The experimental results show that Noise augmentation is the most versatile method, achieving the best overall performance for ViT B on both datasets and for ResNet 50 on the ocular disease dataset. SalfMix achieves the highest ROC AUC (98.16%) on the brain tumour dataset with ViT B, demonstrating its strength in fine grained classification of visually similar classes. Elastic transformation performs best for ResNet 50 on the brain tumour dataset (80.75% accuracy) but suffers from low recall (62.28%), indicating a trade off. ViT B consistently outperforms ResNet 50 across all settings, with accuracy gains of 10–18%, suggesting that global self attention is particularly beneficial for medical images with complex spatial structures.
 
+code will be available at https://github.com/hongdachen691-commits/Single-Domain-Generalized-Medical-Image-Analysis
+
 
 
 ## 🔧 Installation & Setup
